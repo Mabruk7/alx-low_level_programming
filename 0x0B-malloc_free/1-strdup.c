@@ -18,40 +18,40 @@ char *_strdup(char *str)
 		
 {
 		
-	char *aaa;
+char *aaa;
 		
-	int i, r = 0;
+int i, r = 0;
 		
 
 		
-	if (str == NULL)
+if (str == NULL)
 		
-		return (NULL);
+return (NULL);
 		
-	i = 0;
+i = 0;
 		
-	while (str[i] != '\0')
+while (str[i] != '\0')
 		
 		i++;
 		
 
 		
-	aaa = malloc(sizeof(char) * (i + 1));
+aaa = malloc(sizeof(char) * (i + 1));
 		
 
 		
-	if (aaa == NULL)
+if (aaa == NULL)
 		
-		return (NULL);
-		
-
-		
-	for (r = 0; str[r]; r++)
-		
-		aaa[r] = str[r];
+return (NULL);
 		
 
 		
-	return (aaa);
+for (r = 0; str[r]; r++)
+		
+aaa[r] = str[r];
+		
+
+		
+return (aaa);
 		
 }
