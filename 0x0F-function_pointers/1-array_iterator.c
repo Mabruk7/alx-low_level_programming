@@ -6,7 +6,7 @@
  * @f: pointer to function
  * Return: nothing
  **/
-void print_name(char *name, void (*f)(char *))
+void array_iterator(int *array, size_t size, void (*action)(int));
 {
 		if (name == NULL || f == NULL)
 			return;
